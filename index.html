@@ -1,0 +1,764 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="東京都・千葉県・埼玉県・神奈川県の首都圏エリアに幅広く対応しております。WEB制作・ホームページ制作・グラフィック制作(ロゴ・パンフレット・名刺・ポスターなど.)、 印象に残るのデザイン制作ならGteam(Gチーム)お任せください。">
+<meta name="keywords" content="Gteam(Gチーム),WEB制作,ホームページ制作,グラフィック制作,ロゴ,パンフレット,名刺,ポスターなど,">
+<title>東京のWEB制作・ホームページ制作・グラフィック制作 | 在日中国人デザイナー</title>
+
+<!-- desktopicon -->
+<meta name="apple-mobile-web-app-title" content="東京都・千葉県・埼玉県・神奈川県の首都圏エリアに幅広く対応しております。WEB制作・ホームページ制作・グラフィック制作(ロゴ・パンフレット・名刺・ポスターなど.)、 印象に残るのデザイン制作ならGteam(Gチーム)お任せください。">
+<link rel="apple-touch-icon" sizes="180x180" href="asset/img/icon/img_web_icon.png">
+<link rel="apple-touch-icon-precomposed" href="asset/img/icon/img_web_icon.png">
+<link rel="shortcut icon" href="asset/img/icon/img_web_icon.png">
+<link rel="icon" sizes="192x192" href="asset/img/icon/img_web_icon.png">
+<!-- OGP -->
+<meta property="og:title" content="東京都・千葉県・埼玉県・神奈川県の首都圏エリアに幅広く対応しております。WEB制作・ホームページ制作・グラフィック制作(ロゴ・パンフレット・名刺・ポスターなど.)、 印象に残るのデザイン制作ならGteam(Gチーム)お任せください。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.jp-field-kankyou.co.jp/" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:image" content="asset/img/icon/ogp.jpg----------" />
+<meta property="og:site_name" content="東京都・千葉県・埼玉県・神奈川県の首都圏エリアに幅広く対応しております。WEB制作・ホームページ制作・グラフィック制作(ロゴ・パンフレット・名刺・ポスターなど.)、 印象に残るのデザイン制作ならGteam(Gチーム)お任せください。" />
+<meta property="og:description" content="東京都・千葉県・埼玉県・神奈川県の首都圏エリアに幅広く対応しております。WEB制作・ホームページ制作・グラフィック制作(ロゴ・パンフレット・名刺・ポスターなど.)、 印象に残るのデザイン制作ならGteam(Gチーム)お任せください。" />
+<meta name="thumbnail" content="asset/img/logo-300-300.png-------------">
+<!-- css --> 
+<!--<?php include ( dirname(__FILE__) . '/asset/inc/css.php' ); ?>--> 
+<!-- css --> 
+<!--menu-->
+<link rel="stylesheet" type="text/css" href="asset/css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="asset/css/meanmenu-sp.css" />
+<link rel="stylesheet" type="text/css" href="asset/css/meanmenu.css" />
+<link rel="stylesheet" type="text/css" href="asset/css/footer.css" />
+<!--menu--> 
+
+<!--slick-->
+<link rel="stylesheet" type="text/css" href="asset/css/slick.css">
+<link rel="stylesheet" type="text/css" href="asset/css/slick-theme.css">
+<!--slick-->
+
+<link rel="stylesheet" type="text/css" href="asset/css/animation.css" />
+<link rel="stylesheet" type="text/css" href="asset/css/common.css" />
+
+<!--menu--> 
+<script src="asset/js/jquery-3.2.1.min.js"></script> 
+<script src="asset/js/jquery.meanmenu.min.js"></script> 
+
+<!--<script type="text/javascript">
+$(function () {
+  // ページ内スクロール
+  $('a[href^="#"]').click(function () {
+    const speed = 400;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? "html" : href);
+    let position = target.offset().top;
+    $("body,html").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
+  // function
+});
+</script> --> 
+
+<script type="text/javascript">
+$(function(){
+  var menu = $('#slide-nav'),
+      menuBtn = $('.slide-menu-button'),
+      subnav =$('#slide-nav ul ul')
+      body = $(document.body),
+      menuWidth = menu.outerWidth();
+  menuBtn.click(function(){
+    body.toggleClass('open');
+    if(body.hasClass('open')){
+      menu.animate({'right' : 0 }, 'fast');
+      body.animate({'right': menuWidth }, 'fast');
+      $('body').css('z-index','10');
+      $('#fadeLayer').fadeIn(300);
+      subnav.slideUp(), subnav.next().is(':visible') || subnav.next().slideDown(),event.stopPropagation();
+    } else {
+      menu.animate({'right' : -menuWidth }, 'fast');
+      body.animate({'right':0 }, 'fast');
+      $('#fadeLayer').fadeOut(300, function(){
+        $('body').css('z-index','1');
+      });
+      subnav.slideUp(), subnav.next().is(':visible') || subnav.next().slideDown(),
+      event.stopPropagation();
+    }
+  });
+  $('#slide-nav .main-menu > a').on('click',function(){
+    if(body.hasClass('open')){
+      body.removeClass('open');
+      menu.animate({'right' : -menuWidth }, 300);
+      body.animate({'right':0 },300);
+      $('#fadeLayer').fadeOut(300, function(){
+        $('body').css('z-index','1');
+      });
+      subnav.slideUp(), subnav.next().is(':visible') || subnav.next().slideDown(),
+      event.stopPropagation();
+    } else {
+      event.stopPropagation();
+    }
+    if(menuBtn.hasClass('open')){
+      menuBtn.removeClass('open');
+    } else {
+      event.stopPropagation();
+    }
+  });
+  $('#fadeLayer').on('click',function(){
+    if(body.hasClass('open')){
+      body.removeClass('open');
+      menu.animate({'right' : -menuWidth }, 300);
+      body.animate({'right':0 },300);
+      $('#fadeLayer').fadeOut(300, function(){
+        $('body').css('z-index','1');
+      });
+      subnav.slideUp(), subnav.next().is(':visible') || subnav.next().slideDown(),
+      event.stopPropagation();
+    } else {
+      event.stopPropagation();
+    }
+    if(menuBtn.hasClass('open')){
+      menuBtn.removeClass('open');
+    } else {
+      event.stopPropagation();
+    }
+  });
+  $('#slide-nav .sub-menu > a').click(function(e) {
+    $('#slide-nav ul ul').slideUp(), $(this).next().is(':visible') || $(this).next().slideDown(),e.stopPropagation();
+  });
+});
+</script> 
+<script type="text/javascript">
+$(function($){
+	//メニューの表示状態保管用
+	var state = false;
+	//.bodyのスクロール位置
+	var scrollpos = 0;
+	//meanmenuの状態による表示制御
+	function mm_control() {
+		if($('.mean-nav .nav').is(':visible')) {
+			//表示中
+			if(state == false) {
+				scrollpos = $(window).scrollTop();
+				$('body').addClass('fixed').css({'top': -scrollpos});
+				$('.mean-container').addClass('open');
+				$('.mean-nav .mask').show();
+				state = true;
+			}
+		} else {
+			//非表示中
+			if(state == true) {
+				$('body').removeClass('fixed').css({'top': 0});
+				window.scrollTo( 0 , scrollpos );
+				$('.mean-container').removeClass('open');
+				$('.mean-nav .mask').hide();
+				state = false;
+			}
+		}
+	}
+
+	$('#gNav').meanmenu({
+	    meanMenuContainer: "#header .h_nav", // メニューを表示させる位置
+	    meanScreenWidth: "1"
+	});
+	$(document)
+	.on('opend.meanmenu closed.meanmenu', function() {
+		mm_control();
+	})
+	.on('touchend click', '.mean-bar .mask', function(e) {
+		$('.mean-bar .meanmenu-reveal').trigger('click');
+		return false;
+	});
+	//ウィンドウサイズ変更によるメニュー非表示時の制御
+	$(window).on('resize', function() {
+		mm_control();
+	});
+});
+</script> 
+<!--menu-->
+<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-05ZWX17TYY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-05ZWX17TYY');
+</script>
+</head>
+<body>
+
+<!--header_inc --> 
+<!--<?php include ( dirname(__FILE__) . '/asset/inc/header.php' ); ?>--> 
+<!--header_inc -->
+<header id="header">
+  <div class="container">
+    <div id="h_top">
+      <div class="h_logo">
+        <div class="flex">
+          <div class="bgextend bgLRextend"><span class="bgappear"> <a href="/">
+            <figure class="figure">
+              <picture>
+                <source media="(max-width: 916px)" srcset="asset/img/logo-sp.png">
+                <img src="asset/img/logo.png" alt=""> </picture>
+            </figure>
+            </a> </span></div>
+        </div>
+      </div>
+      
+      <div class="h_nav menu-pc">
+        <nav id="gNav">
+          <ul class="nav">
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#service">Service</a></li>
+			<li><a href="/works/">Works</a></li>
+            <li><a href="mailto:youimpress@yahoo.co.jp">Contact</a></li>
+            <!-- <li class="add"> <a href="/">Language<i class="fa fa-angle-down"></i></a>
+				<ul class="sub-menu">
+				<li><a href="/jp/">Japanese</a></li>
+				<li><a href="/cn/">Chinese</a></li>
+				</ul>
+				</li>-->
+          </ul>
+          <!--<div class="mask"></div>--> 
+        </nav>
+      </div>
+      <div class="menu-sp"> <a class="slide-menu-button">
+        <div id="nav_toggle">
+          <div> <span></span> <span></span> <span></span> </div>
+        </div>
+        <!--nav_toggle--> 
+        </a>
+        <nav id="slide-nav">
+          <ul>
+            <li class="main-menu"><a href="/">HOME</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#service">Service</a></li>
+			<li><a href="/works/">Works</a></li>
+            <li><a href="mailto:youimpress@yahoo.co.jp">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="top">
+<div class="wrap">
+  <div class="wrapper">
+	<section class="sec00 til-h1">
+      <div class="sec00_ineer">
+		  <div class="bgextend bgLRextend"><span class="bgappear">
+		  <h1>東京のWEB制作会社・ホームページ制作・グラフィック制作 |<span class="sp-display"></span> 在日中国人デザイナー </h1>
+		  </span></div>
+	  </div>
+    </section>
+	  
+    <section class="sec01 main">
+		  <div class="img-area">	
+			<picture>
+			 <source media="(max-width: 769px)" srcset="asset/img/top/img-main-r.jpg">
+			<img src="asset/img/top/img-main-r.jpg" alt=""> </picture>
+          </div>
+          <div class="sec01_ineer">
+			  <div class="wave-area">	
+					<div class="wave"></div>
+					<div class="wave -two"></div>
+					<div class="wave -three"></div><br>
+			  </div>
+          <div class="copy">
+            <div class="main-title">
+			  <div class="flex">
+                <div class="bgextend bgLRextend"><span class="bgappear">
+                  <div class="main-title_inner one">
+                   <h2>デザインの力で、</h2>
+				  </div>
+                  <div class="main-title_inner two">
+                    <h2>感動を。</h2>
+                  </div>
+                  <div class="main-title_inner three">
+                    <p>課題を「デザイン思考」で解決する。<br>
+						世の中のモノやコトをもっと良くしたい。<br>
+						物事の本質をきちんと伝えたい。</p>
+                  </div>
+                  </span></div>
+              </div>
+            </div>
+          </div>
+		  
+        <!--<div class="mainVisual top-image">
+          <div class="top-image-main">
+            <div class="lazy slider" data-sizes="50vw">
+              <div>
+                <div class="vegas-overlay"></div>
+                <div class="vegas-overlay-02"></div>
+                <figure class="figure">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="asset/img/top/img-main-sp-01.jpg">
+                    <img src="asset/img/top/img-main-pc-01.jpg" alt=""> </picture>
+                </figure>
+              </div>
+              <div>
+                <div class="vegas-overlay"></div>
+                <div class="vegas-overlay-02"></div>
+                <figure class="figure">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="asset/img/top/img-main-sp-02.jpg">
+                    <img src="asset/img/top/img-main-pc-02.jpg" alt=""> </picture>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <div class="scroll"> </div>
+      </div>
+    </section>
+    
+	<div id="service">
+      <section class="sec-common service">
+          <div class="sec-common_inner">
+          <div class="ttl">
+            <h2><span class="en hana01">Services</span><span class="jp">業務内容</span></h2>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-servie-p.jpg">
+                    <img src="asset/img/top/img-servie-p.jpg" alt=""> </picture>
+                </div>
+					<h3>企画提案</h3>
+					<p>Planning</p>
+					<p>お客様のヒアリングから意向に合わせた戦略づくり。<br>
+					お客様に納得感のある提案をするために、ヒアリングに時間を使います。その後、現状に最適な企画戦略の提案を行います。</p>
+                <!--<div class="hd-btn"> <a href="/facility/" class="hd-mod-btn"> <span class="hd-btn-inner">more</span> </a> </div>-->
+              </div>
+				<div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-servie-w.jpg">
+                    <img src="asset/img/top/img-servie-w.jpg" alt=""> </picture>
+                </div>
+					<h3>Webデザイン</h3>
+					<p>Web Design</p>
+					<p>課題や目的を洗練されたビジュアルで解決する。<br>
+					UX/UI設計に基づく戦略とデザインで伝えたい価値を伝わるカタチに。ビジネス成果に貢献するWebサイト制作・構築を提供します。</p>
+                <!--<div class="hd-btn"> <a href="/facility/" class="hd-mod-btn"> <span class="hd-btn-inner">more</span> </a> </div>-->
+              </div>
+				<div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-servie-g.jpg">
+                    <img src="asset/img/top/img-servie-g.jpg" alt=""> </picture>
+                </div>
+					<h3>グラフィック</h3>
+					<p>GRAPHIC</p>
+				    <p>ターゲットに訴求する、効果的な広告デザインを提供。<br>
+					ロゴ、会社案内、カタログ・パンフレット、名刺、社内マニュアル、フードメニューなど様々な制作を請け負います</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+		  <div class="service_bg-l"></div>
+		  <div class="service_bg-r"></div>
+        </section>
+      </div>
+	  
+	<div id="work">
+      <section class="sec-common work">
+        <div class="sec-common_inner">
+          <div class="ttl">
+            <h2><span class="en hana01">Work</span><span class="jp">仕事</span></h2>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-work-a-01.jpg">
+                    <img src="asset/img/top/img-work-a-01.jpg" alt=""> </picture>
+                </div>
+              </div>
+			  <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-work-a-02.jpg">
+                    <img src="asset/img/top/img-work-a-02.jpg" alt=""> </picture>
+                </div>
+              </div>
+			  <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-work-a-03.jpg">
+                    <img src="asset/img/top/img-work-a-03.jpg" alt=""> </picture>
+                </div>
+              </div>
+			  <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-work-a-04.jpg">
+                    <img src="asset/img/top/img-work-a-04.jpg" alt=""> </picture>
+                </div>
+              </div>
+			  <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-work-a-05.jpg">
+                    <img src="asset/img/top/img-work-a-05.jpg" alt=""> </picture>
+                </div>
+              </div>
+			  <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-work-a-06.jpg">
+                    <img src="asset/img/top/img-work-a-06.jpg" alt=""> </picture>
+                </div>
+              </div>
+			  <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-work-a-07.jpg">
+                    <img src="asset/img/top/img-work-a-07.jpg" alt=""> </picture>
+                </div>
+              </div>
+			  <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-work-a-08.jpg">
+                    <img src="asset/img/top/img-work-a-08.jpg" alt=""> </picture>
+                </div>
+              </div>
+			  <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-work-a-09.jpg">
+                    <img src="asset/img/top/img-work-a-09.jpg" alt=""> </picture>
+                </div>
+              </div>
+			  <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-work-a-10.jpg">
+                    <img src="asset/img/top/img-work-a-10.jpg" alt=""> </picture>
+                </div>
+              </div>
+			  <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-work-a-11.jpg">
+                    <img src="asset/img/top/img-work-a-11.jpg" alt=""> </picture>
+                </div>
+              </div>
+			  <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-work-a-12.jpg">
+                    <img src="asset/img/top/img-work-a-12.jpg" alt=""> </picture>
+                </div>
+              </div>
+			</div>
+			  <div class="hd-btn"> <a href="/works/" class="hd-mod-btn"> <span class="hd-btn-inner">more</span> </a> </div>
+          </div>
+        </div>
+        <div class="work_bg"></div>
+        </section>
+      </div>  
+	  
+	  
+	  <div id="about">
+      <section class="sec-common about">
+        <div class="sec-common_inner">
+          <div class="ttl">
+            <h2><span class="en hana01">About</span><span class="jp">私について</span></h2>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="column">
+                <div class="one-inner">
+                 <p>2011年に中国から日本へ渡り、デザインの道を歩み始めました。以来、8年以上にわたり東京でWEB制作、ホームページ制作、グラフィック制作を手掛け、クライアントのニーズに応じたクリエイティブなソリューションを提供しています。デザインを通じて、ブランドの魅力を最大限に引き出し、ユーザーに愛されるプロダクトを作り上げることを目指しています。</p>
+                </div>
+              </div>
+			  <div class="column">
+                <div class="one-inner">
+                  <p>In 2011, I moved from China to Japan and began my career in design. Since then, I have been working in Tokyo for over eight years on web production, homepage production, and graphic production, providing creative solutions to meet my clients' needs. Through design, I aim to maximize the appeal of brands and create products that are loved by users.</p>
+                </div>
+              </div>
+			  <div class="column">
+                <div class="one-inner">
+                  <picture>
+                    <source media="(max-width: 769px)" srcset="asset/img/top/img-about.png">
+                    <img src="asset/img/top/img-about.png" alt=""> </picture>
+                </div>
+              </div>
+             </div>
+			</div>
+        </div>
+        <!--<div class="sec03_bg"></div>-->
+        </section>
+      </div>
+
+    <!--<div id="access">
+        <section class="sec-common access">
+          <div class="sec-common_inner">
+            <div class="ttl">
+              <h2><span class="en hana01">ACCESS</span><span class="jp">アクセス</span></h2>
+            </div>
+            <div class="content">
+              <div class="row">
+                <div class="column one">
+					<p>■ 所在地<br>
+					〒000-0001&nbsp;東京都新宿区11-1-1<br>
+					■ ご利用可能駅/<br>
+					■ 駐車場完備<br>
+                  <div class="column_innter">
+                    <figure class="figure">
+                      <picture>
+                        <source media="(max-width: 800px)" srcset="asset/img/top/img-map.png">
+                        <img src="asset/img/top/img-map.png" alt=""> </picture>
+                    </figure>
+                  </div>
+                </div>
+                <div class="column two">
+                  <div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1285.9729836836025!2d139.69027322743275!3d35.690559945550376!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f32abf4d9acb%3A0xd789f0641a4f2732!2z44CSMTYwLTAwMjMg5p2x5Lqs6YO95paw5a6_5Yy66KW_5paw5a6_77yS5LiB55uu77yR77yR4oiS77yV!5e0!3m2!1sja!2sjp!4v1723093390103!5m2!1sja!2sjp"  width="100%" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>-->
+    
+	<section id="news">
+		<div  class="sec-common news" >
+		<div class="sec-common_inner">
+        <div class="ttl">
+          <h2><span class="en">NEWS</span><span class="jp">ニュース</span></h2>
+        </div>
+        <div class="content">
+          <ul>
+            <li class="item">
+              <p class="item_date">2024.8.8</p>
+              <p class="item_category"> <span>お知らせ</span></p>
+              <p class="item_ttl">ホームページリニューアルのお知らせ</p>
+            </li>
+			  <!--<li class="item">
+              <p class="item_date">2020.0.1</p>
+              <p class="item_category"> <span>お知らせ</span></p>
+              <p class="item_ttl">リニューアル予定</p>
+            </li>-->
+          </ul>
+        </div>
+        <!--<div class="news_btn"><a href="/news/">一覧を見る</a></div>--> 
+        </div>
+        </div>
+    </section>
+	  
+    <div id="contact">
+        <section class="sec-common contact">
+          <div class="sec-common_inner">
+            <div class="ttl">
+              <h2><span class="en hana01">CONTACT</span><span class="jp">コンタクト</span></h2>
+            </div>
+            <div class="content">
+              <div class="row">
+                <div class="column one">
+                  <p></p>
+                  <!--<div class="column_innter">
+                    <figure class="figure">
+                      <picture>
+                        <source media="(max-width: 800px)" srcset="asset/img/top/img-content.png">
+                        <img src="asset/img/top/img-content.png" alt=""> </picture>
+                    </figure>
+                  </div>-->
+                </div>
+                <div class="column two">
+                  <div class="column_inner">
+                    <p class="ttl_s">お問い合わせ</p>
+                    <p>お客さま一人ひとりにあったサービスのご案内を致します。 お気軽にお問い合わせください。</p>
+                    <div class="row">
+                      <!--<div class="column a_one">
+                        <p class="font_xll"><a href="tel:0359432533">TEL:03-5943-2533</a></p>
+                        <p>FAX:03-3962-2681</p>
+                      </div>-->
+                      <div class="column a_two">
+                        <div class="hd-btn"><a href="mailto:youimpress@yahoo.co.jp" class="hd-mod-btn"> <span class="hd-btn-inner">メールのお問い合わせ</span> </a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<!--top--> 
+
+<!--<div class="pageBg"> <span class="txt"></span> </div>--> 
+
+<!--footer_inc --> 
+<!--
+<?php include ( dirname(__FILE__) . '/asset/inc/footer.php' ); ?>
+--> 
+<!--footer_inc --> 
+<!--<div class="conversion"> <a class="conversion-dl" href="https://orionresort.airhost.co/" target="_blank"> <span>Reservation</span> </a> <a class="conversion-contact" href="mailto:info@orionresort.tokyo"> <span>Inquiry</span> </a> </div>--> 
+
+<!--<div class="pageBg"> <span class="txt"></span> </div>-->
+<footer id="footer" class="outer-block">
+  <div class="footer_inner">
+    <div class="footer_one">
+      <div class="f_logo"> <a href="/"><img src="asset/img/logo-sp.png" alt=""></a> </div>
+    </div>
+    <!--<div class="footer_two">
+      <div class="footer_two_inner">
+        <div class="row">
+          <div class="column">
+            <p>Gteam Design</p>
+          </div>
+          <div class="column">
+            <p><a href="#business">About</a></p>
+            <p><a href="#results">Service</a></p>
+            <p><a href="#profile">Work</a></p>
+            <p><a href="mailto:youimpress@yahoo.co.jp">Contact</a></p>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <div class="footer_three">
+      <div class="copyright">
+        <p>Gteam Design © since 2000 </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="page_top"><a href="#"><span class="dli-arrow-up"></span></a></div>
+
+<!--menu--> 
+<script src="asset/js/jquery-common.js"></script> 
+<!--menu--> 
+
+<!--slick--> 
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> 
+<script src="asset/js/slick.js" type="text/javascript" charset="utf-8"></script> 
+<script>	
+	$(function () {
+  $(".slider")
+    // 最初のスライドに"add-animation"のclassを付ける(data-slick-index="0"が最初のスライドを指す)
+    .on("init", function () {
+      $('.slick-slide[data-slick-index="0"]').addClass("add-animation");
+    })
+    // 通常のオプション
+    .slick({
+      autoplay: true, // 自動再生ON
+      fade: true, // フェードON
+      arrows: true, // 矢印OFF
+      speed: 1500, // スライド、フェードアニメーションの速度1000ミリ秒
+      autoplaySpeed: 3000, // 自動再生速度4000ミリ秒
+      pauseOnFocus: false, // フォーカスで一時停止OFF
+      pauseOnHover: false, // マウスホバーで一時停止OFF
+    })
+    .on({
+      // スライドが移動する前に発生するイベント
+      beforeChange: function (event, slick, currentSlide, nextSlide) {
+        // 表示されているスライドに"add-animation"のclassをつける
+        $(".slick-slide", this).eq(nextSlide).addClass("add-animation");
+        // あとで"add-animation"のclassを消すための"remove-animation"classを付ける
+        $(".slick-slide", this).eq(currentSlide).addClass("remove-animation");
+      },
+      // スライドが移動した後に発生するイベント
+      afterChange: function () {
+        // 表示していないスライドはアニメーションのclassを外す
+        $(".remove-animation", this).removeClass(
+          "remove-animation add-animation"
+        );
+      },
+    });
+});
+	</script> 
+<script>	
+	$(function () {
+  $(".slider_01")
+    .slick({
+	centerMode: true,
+	centerPadding: '60px',
+	autoplay: true,
+	autoplaySpeed: 2000,
+	slidesToShow: 2,
+	dots: true,
+  	infinite: true,
+  	responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+    })
+
+});
+</script> 
+ 
+<!--slick--> 
+
+<!--   foot_menu_下開く  --> 
+<script>
+$(function(){
+	$(".accordionbox dt").on("click", function() {
+		$(this).next().slideToggle();	
+		// activeが存在する場合
+		if ($(this).children(".accordion_icon").hasClass('active')) {			
+			// activeを削除
+			$(this).children(".accordion_icon").removeClass('active');				
+		}
+		else {
+			// activeを追加
+			$(this).children(".accordion_icon").addClass('active');			
+		}			
+	});
+});    
+</script> 
+<!--   foot_menu_下開く   --> 
+
+<!--   topへ   --> 
+<script>
+	$(function(){
+  var pagetop = $('#page_top');
+  // ボタン非表示
+  pagetop.hide();
+
+  // 100px スクロールしたらボタン表示
+  $(window).scroll(function () {
+     if ($(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+     } else {
+          pagetop.fadeOut();
+     }
+  });
+  pagetop.click(function () {
+     $('body, html').animate({ scrollTop: 0 }, 500);
+     return false;
+  });
+});
+</script> 
+<!--   topへ   -->
+
+</body>
+</html>
