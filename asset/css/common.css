@@ -54,6 +54,18 @@ p:last-child {
 .menu-download .fa-angle-down:before {
   right: -12%;
 }
+/* 文字浮现 下上 */
+.text_anime {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease-out;
+}
+
+.text_anime.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* -------------------------------------------
 要素非表示・回り込み解除
 -------------------------------------------*/
@@ -1178,4 +1190,5 @@ sp-750px以下
     top: inherit;
     bottom: 2%;
   }
+
 }
