@@ -1,0 +1,518 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="東京都・千葉県・埼玉県・神奈川県の首都圏エリアに幅広く対応しております。WEB制作・ホームページ制作・グラフィック制作(ロゴ・パンフレット・名刺・ポスターなど.)、 印象に残るのデザイン制作ならGteam(Gチーム)お任せください。">
+<meta name="keywords" content="Gteam(Gチーム),WEB制作,ホームページ制作,グラフィック制作,ロゴ,パンフレット,名刺,ポスターなど,">
+<title>東京のWEB制作・ホームページ制作・グラフィック制作 | 在日中国人デザイナー</title>
+
+<!-- desktopicon -->
+<meta name="apple-mobile-web-app-title" content="東京都・千葉県・埼玉県・神奈川県の首都圏エリアに幅広く対応しております。WEB制作・ホームページ制作・グラフィック制作(ロゴ・パンフレット・名刺・ポスターなど.)、 印象に残るのデザイン制作ならGteam(Gチーム)お任せください。">
+<link rel="apple-touch-icon" sizes="180x180" href="../asset/img/icon/img_web_icon.png">
+<link rel="apple-touch-icon-precomposed" href="../asset/img/icon/img_web_icon.png">
+<link rel="shortcut icon" href="../asset/img/icon/img_web_icon.png">
+<link rel="icon" sizes="192x192" href="../asset/img/icon/img_web_icon.png">
+<!-- OGP -->
+<meta property="og:title" content="東京都・千葉県・埼玉県・神奈川県の首都圏エリアに幅広く対応しております。WEB制作・ホームページ制作・グラフィック制作(ロゴ・パンフレット・名刺・ポスターなど.)、 印象に残るのデザイン制作ならGteam(Gチーム)お任せください。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.jp-field-kankyou.co.jp/" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="og:image" content="../asset/img/icon/ogp.jpg----------" />
+<meta property="og:site_name" content="東京都・千葉県・埼玉県・神奈川県の首都圏エリアに幅広く対応しております。WEB制作・ホームページ制作・グラフィック制作(ロゴ・パンフレット・名刺・ポスターなど.)、 印象に残るのデザイン制作ならGteam(Gチーム)お任せください。" />
+<meta property="og:description" content="東京都・千葉県・埼玉県・神奈川県の首都圏エリアに幅広く対応しております。WEB制作・ホームページ制作・グラフィック制作(ロゴ・パンフレット・名刺・ポスターなど.)、 印象に残るのデザイン制作ならGteam(Gチーム)お任せください。" />
+<meta name="thumbnail" content="../asset/img/logo-300-300.png-------------">
+<!-- css --> 
+<!--<?php include ( dirname(__FILE__) . '/../asset/inc/css.php' ); ?>--> 
+<!-- css --> 
+<!--menu-->
+<link rel="stylesheet" type="text/css" href="../asset/css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../asset/css/meanmenu-sp.css" />
+<link rel="stylesheet" type="text/css" href="../asset/css/meanmenu.css" />
+<link rel="stylesheet" type="text/css" href="../asset/css/footer.css" />
+<!--menu--> 
+
+<!--slick-->
+<link rel="stylesheet" type="text/css" href="../asset/css/slick.css">
+<link rel="stylesheet" type="text/css" href="../asset/css/slick-theme.css">
+<!--slick-->
+
+<link rel="stylesheet" type="text/css" href="../asset/css/animation.css" />
+<link rel="stylesheet" type="text/css" href="../asset/css/common.css" />
+
+<!--menu--> 
+<script src="../asset/js/jquery-3.2.1.min.js"></script> 
+<script src="../asset/js/jquery.meanmenu.min.js"></script> 
+
+<!--<script type="text/javascript">
+$(function () {
+  // ページ内スクロール
+  $('a[href^="#"]').click(function () {
+    const speed = 400;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? "html" : href);
+    let position = target.offset().top;
+    $("body,html").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
+  // function
+});
+</script> --> 
+
+<script type="text/javascript">
+$(function(){
+  var menu = $('#slide-nav'),
+      menuBtn = $('.slide-menu-button'),
+      subnav =$('#slide-nav ul ul')
+      body = $(document.body),
+      menuWidth = menu.outerWidth();
+  menuBtn.click(function(){
+    body.toggleClass('open');
+    if(body.hasClass('open')){
+      menu.animate({'right' : 0 }, 'fast');
+      body.animate({'right': menuWidth }, 'fast');
+      $('body').css('z-index','10');
+      $('#fadeLayer').fadeIn(300);
+      subnav.slideUp(), subnav.next().is(':visible') || subnav.next().slideDown(),event.stopPropagation();
+    } else {
+      menu.animate({'right' : -menuWidth }, 'fast');
+      body.animate({'right':0 }, 'fast');
+      $('#fadeLayer').fadeOut(300, function(){
+        $('body').css('z-index','1');
+      });
+      subnav.slideUp(), subnav.next().is(':visible') || subnav.next().slideDown(),
+      event.stopPropagation();
+    }
+  });
+  $('#slide-nav .main-menu > a').on('click',function(){
+    if(body.hasClass('open')){
+      body.removeClass('open');
+      menu.animate({'right' : -menuWidth }, 300);
+      body.animate({'right':0 },300);
+      $('#fadeLayer').fadeOut(300, function(){
+        $('body').css('z-index','1');
+      });
+      subnav.slideUp(), subnav.next().is(':visible') || subnav.next().slideDown(),
+      event.stopPropagation();
+    } else {
+      event.stopPropagation();
+    }
+    if(menuBtn.hasClass('open')){
+      menuBtn.removeClass('open');
+    } else {
+      event.stopPropagation();
+    }
+  });
+  $('#fadeLayer').on('click',function(){
+    if(body.hasClass('open')){
+      body.removeClass('open');
+      menu.animate({'right' : -menuWidth }, 300);
+      body.animate({'right':0 },300);
+      $('#fadeLayer').fadeOut(300, function(){
+        $('body').css('z-index','1');
+      });
+      subnav.slideUp(), subnav.next().is(':visible') || subnav.next().slideDown(),
+      event.stopPropagation();
+    } else {
+      event.stopPropagation();
+    }
+    if(menuBtn.hasClass('open')){
+      menuBtn.removeClass('open');
+    } else {
+      event.stopPropagation();
+    }
+  });
+  $('#slide-nav .sub-menu > a').click(function(e) {
+    $('#slide-nav ul ul').slideUp(), $(this).next().is(':visible') || $(this).next().slideDown(),e.stopPropagation();
+  });
+});
+</script> 
+<script type="text/javascript">
+$(function($){
+	//メニューの表示状態保管用
+	var state = false;
+	//.bodyのスクロール位置
+	var scrollpos = 0;
+	//meanmenuの状態による表示制御
+	function mm_control() {
+		if($('.mean-nav .nav').is(':visible')) {
+			//表示中
+			if(state == false) {
+				scrollpos = $(window).scrollTop();
+				$('body').addClass('fixed').css({'top': -scrollpos});
+				$('.mean-container').addClass('open');
+				$('.mean-nav .mask').show();
+				state = true;
+			}
+		} else {
+			//非表示中
+			if(state == true) {
+				$('body').removeClass('fixed').css({'top': 0});
+				window.scrollTo( 0 , scrollpos );
+				$('.mean-container').removeClass('open');
+				$('.mean-nav .mask').hide();
+				state = false;
+			}
+		}
+	}
+
+	$('#gNav').meanmenu({
+	    meanMenuContainer: "#header .h_nav", // メニューを表示させる位置
+	    meanScreenWidth: "1"
+	});
+	$(document)
+	.on('opend.meanmenu closed.meanmenu', function() {
+		mm_control();
+	})
+	.on('touchend click', '.mean-bar .mask', function(e) {
+		$('.mean-bar .meanmenu-reveal').trigger('click');
+		return false;
+	});
+	//ウィンドウサイズ変更によるメニュー非表示時の制御
+	$(window).on('resize', function() {
+		mm_control();
+	});
+});
+</script> 
+<!--menu-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-05ZWX17TYY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-05ZWX17TYY');
+</script>
+</head>
+<body>
+
+<!--header_inc --> 
+<!--<?php include ( dirname(__FILE__) . '/../asset/inc/header.php' ); ?>--> 
+<!--header_inc -->
+<header id="header">
+  <div class="container">
+    <div id="h_top">
+      <div class="h_logo">
+        <div class="flex">
+          <div class="bgextend bgLRextend"><span class="bgappear"> <a href="/">
+            <figure class="figure">
+              <picture>
+                <source media="(max-width: 916px)" srcset="../asset/img/logo-sp.png">
+                <img src="../asset/img/logo.png" alt=""> </picture>
+            </figure>
+            </a> </span></div>
+        </div>
+      </div>
+      
+      <div class="h_nav menu-pc">
+        <nav id="gNav">
+          <ul class="nav">
+            <li><a href="../#about">About</a></li>
+            <li><a href="../#service">Service</a></li>
+			<li><a href="../works/">Works</a></li>
+            <li><a href="mailto:youimpress@yahoo.co.jp">Contact</a></li>
+            <!-- <li class="add"> <a href="/">Language<i class="fa fa-angle-down"></i></a>
+				<ul class="sub-menu">
+				<li><a href="/jp/">Japanese</a></li>
+				<li><a href="/cn/">Chinese</a></li>
+				</ul>
+				</li>-->
+          </ul>
+          <!--<div class="mask"></div>--> 
+        </nav>
+      </div>
+      <div class="menu-sp"> <a class="slide-menu-button">
+        <div id="nav_toggle">
+          <div> <span></span> <span></span> <span></span> </div>
+        </div>
+        <!--nav_toggle--> 
+        </a>
+        <nav id="slide-nav">
+          <ul>
+            <li class="main-menu"><a href="/">HOME</a></li>
+            <li><a href="../#about">About</a></li>
+            <li><a href="../#service">Service</a></li>
+			<li><a href="../works/">Works</a></li>
+            <li><a href="mailto:youimpress@yahoo.co.jp">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="works-item">
+<div class="wrap">
+  <div class="wrapper">
+	<section class="sec00 til-h1">
+      <div class="sec00_ineer">
+		  <div class="bgextend bgLRextend"><span class="bgappear">
+		  <h1>東京のWEB制作会社・ホームページ制作・グラフィック制作 | 在日中国人デザイナー </h1>
+		  </span></div>
+	  </div>
+    </section>
+	  
+    <div id="works-item-area">
+      <section class="sec-common works-item-area">
+        <div class="sec-common_inner">
+          <div class="ttl">
+            <h2><span class="en hana01">Work</span><span class="jp">仕事</span></h2>
+          </div>
+          <div class="content">
+			<p class="works-item-area-title">総合貸衣裳館Mai　Webサイト</p>
+			<p class="works-item-area-title">総合貸衣裳館Mai（マイ）のWebサイトを制作しました。</p>
+            <div class="works-item-area-img">
+					<div class="works-item-area-img_inner">
+					   <figure class="figure">
+							<picture>
+							<source media="(max-width: 750px)" srcset="../asset/img/works/item09/img-00.jpg">
+							<img src="../asset/img/works/item09/img-00.jpg" alt="">
+							</picture>  
+						</figure>
+					</div>
+				
+				<div class="works-item-area-img_inner">
+					   <figure class="figure">
+							<picture>
+							<source media="(max-width: 750px)" srcset="../asset/img/works/item09/img-01.jpg">
+							<img src="../asset/img/works/item09/img-01.jpg" alt="">
+							</picture>  
+						</figure>
+					</div>
+				
+				<div class="works-item-area-img_inner">
+					   <figure class="figure">
+							<picture>
+							<source media="(max-width: 750px)" srcset="../asset/img/works/item09/img-02.jpg">
+							<img src="../asset/img/works/item09/img-02.jpg" alt="">
+							</picture>  
+						</figure>
+					</div>
+				
+				<div class="works-item-area-img_inner">
+					   <figure class="figure">
+							<picture>
+							<source media="(max-width: 750px)" srcset="../asset/img/works/item09/img-03.jpg">
+							<img src="../asset/img/works/item09/img-03.jpg" alt="">
+							</picture>  
+						</figure>
+					</div>
+				  
+				    
+				  
+				  
+				  
+			   </div>
+		  </div>
+        </div>
+        <div class="works-area_bg"></div>
+        </section>
+      </div>  
+	  
+	<div id="contact">
+        <section class="sec-common contact">
+          <div class="sec-common_inner">
+            <div class="ttl">
+              <h2><span class="en hana01">CONTACT</span><span class="jp">コンタクト</span></h2>
+            </div>
+            <div class="content">
+              <div class="row">
+                <div class="column one">
+                  <p></p>
+                  <!--<div class="column_innter">
+                    <figure class="figure">
+                      <picture>
+                        <source media="(max-width: 800px)" srcset="../asset/img/top/img-content.png">
+                        <img src="../asset/img/top/img-content.png" alt=""> </picture>
+                    </figure>
+                  </div>-->
+                </div>
+                <div class="column two">
+                  <div class="column_inner">
+                    <p class="ttl_s">お問い合わせ</p>
+                    <p>お客さま一人ひとりにあったサービスのご案内を致します。 お気軽にお問い合わせください。</p>
+                    <div class="row">
+                      <!--<div class="column a_one">
+                        <p class="font_xll"><a href="tel:0359432533">TEL:03-5943-2533</a></p>
+                        <p>FAX:03-3962-2681</p>
+                      </div>-->
+                      <div class="column a_two">
+                        <div class="hd-btn"><a href="mailto:youimpress@yahoo.co.jp" class="hd-mod-btn"> <span class="hd-btn-inner">メールのお問い合わせ</span> </a> </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<!--top--> 
+
+<!--<div class="pageBg"> <span class="txt"></span> </div>--> 
+
+<!--footer_inc --> 
+<!--
+<?php include ( dirname(__FILE__) . '/../asset/inc/footer.php' ); ?>
+--> 
+<!--footer_inc --> 
+<!--<div class="conversion"> <a class="conversion-dl" href="https://orionresort.airhost.co/" target="_blank"> <span>Reservation</span> </a> <a class="conversion-contact" href="mailto:info@orionresort.tokyo"> <span>Inquiry</span> </a> </div>--> 
+
+<!--<div class="pageBg"> <span class="txt"></span> </div>-->
+<footer id="footer" class="outer-block">
+  <div class="footer_inner">
+    <div class="footer_one">
+      <div class="f_logo"> <a href="/"><img src="../asset/img/logo-sp.png" alt=""></a> </div>
+    </div>
+    <!--<div class="footer_two">
+      <div class="footer_two_inner">
+        <div class="row">
+          <div class="column">
+            <p>Gteam Design</p>
+          </div>
+          <div class="column">
+            <p><a href="#business">About</a></p>
+            <p><a href="#results">Service</a></p>
+            <p><a href="#profile">Work</a></p>
+            <p><a href="mailto:youimpress@yahoo.co.jp">Contact</a></p>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <div class="footer_three">
+      <div class="copyright">
+        <p>Gteam Design © since 2000 </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="page_top"><a href="#"><span class="dli-arrow-up"></span></a></div>
+
+<!--menu--> 
+<script src="../asset/js/jquery-common.js"></script> 
+<!--menu--> 
+
+<!--slick--> 
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> 
+<script src="../asset/js/slick.js" type="text/javascript" charset="utf-8"></script> 
+<script>	
+	$(function () {
+  $(".slider")
+    // 最初のスライドに"add-animation"のclassを付ける(data-slick-index="0"が最初のスライドを指す)
+    .on("init", function () {
+      $('.slick-slide[data-slick-index="0"]').addClass("add-animation");
+    })
+    // 通常のオプション
+    .slick({
+      autoplay: true, // 自動再生ON
+      fade: true, // フェードON
+      arrows: true, // 矢印OFF
+      speed: 1500, // スライド、フェードアニメーションの速度1000ミリ秒
+      autoplaySpeed: 3000, // 自動再生速度4000ミリ秒
+      pauseOnFocus: false, // フォーカスで一時停止OFF
+      pauseOnHover: false, // マウスホバーで一時停止OFF
+    })
+    .on({
+      // スライドが移動する前に発生するイベント
+      beforeChange: function (event, slick, currentSlide, nextSlide) {
+        // 表示されているスライドに"add-animation"のclassをつける
+        $(".slick-slide", this).eq(nextSlide).addClass("add-animation");
+        // あとで"add-animation"のclassを消すための"remove-animation"classを付ける
+        $(".slick-slide", this).eq(currentSlide).addClass("remove-animation");
+      },
+      // スライドが移動した後に発生するイベント
+      afterChange: function () {
+        // 表示していないスライドはアニメーションのclassを外す
+        $(".remove-animation", this).removeClass(
+          "remove-animation add-animation"
+        );
+      },
+    });
+});
+	</script> 
+<script>	
+	$(function () {
+  $(".slider_01")
+    .slick({
+	centerMode: true,
+	centerPadding: '60px',
+	autoplay: true,
+	autoplaySpeed: 2000,
+	slidesToShow: 2,
+	dots: true,
+  	infinite: true,
+  	responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+    })
+
+});
+</script> 
+ 
+<!--slick--> 
+
+<!--   foot_menu_下開く  --> 
+<script>
+$(function(){
+	$(".accordionbox dt").on("click", function() {
+		$(this).next().slideToggle();	
+		// activeが存在する場合
+		if ($(this).children(".accordion_icon").hasClass('active')) {			
+			// activeを削除
+			$(this).children(".accordion_icon").removeClass('active');				
+		}
+		else {
+			// activeを追加
+			$(this).children(".accordion_icon").addClass('active');			
+		}			
+	});
+});    
+</script> 
+<!--   foot_menu_下開く   --> 
+
+<!--   topへ   --> 
+<script>
+	$(function(){
+  var pagetop = $('#page_top');
+  // ボタン非表示
+  pagetop.hide();
+
+  // 100px スクロールしたらボタン表示
+  $(window).scroll(function () {
+     if ($(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+     } else {
+          pagetop.fadeOut();
+     }
+  });
+  pagetop.click(function () {
+     $('body, html').animate({ scrollTop: 0 }, 500);
+     return false;
+  });
+});
+</script> 
+<!--   topへ   -->
+
+</body>
+</html>
