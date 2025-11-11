@@ -757,10 +757,29 @@ $(function(){
 });
 </script> 
 <!--   topへ   -->
+<script>
+// 监听滚动事件
+const elements = document.querySelectorAll('.text_anime');
 
+function scrollAnimation() {
+  const triggerBottom = window.innerHeight * 0.8; // 视口 80% 的位置触发
+
+  elements.forEach(el => {
+    const elTop = el.getBoundingClientRect().top;
+
+    if (elTop < triggerBottom) {
+      el.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', scrollAnimation);
+scrollAnimation(); // 页面加载时也触发一次
+</script>
 </body>
 
 </html>
+
 
 
 
