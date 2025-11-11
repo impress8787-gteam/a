@@ -1,0 +1,145 @@
+
+/*============================
+nav style
+============================*/
+#slide-nav{
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background: #ea5550;
+  z-index: 700;
+}
+#slide-nav ul {
+  padding-top: 60px;
+}
+#slide-nav ul li {
+  display: block;
+  position: relative;
+}
+#slide-nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-bottom: 1px dotted #FFF;
+  color: #f5f5f5;
+}
+#slide-nav ul li a:hover {
+  background: #c0c0c0;
+}
+#slide-nav ul ul {
+  margin: -2px 0 0;
+  padding: 0;
+}
+#slide-nav ul ul {
+  display: none;
+}
+#slide-nav ul ul li {
+  background: #00608d;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: none;
+}
+#slide-nav ul ul li a {
+  font-size: 12px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #f5f5f5;
+}
+.slide-menu-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: #f5f5f5;
+  cursor: pointer;
+  z-index: 800;
+}
+.slide-menu-button .menu-icon {
+  display: block;
+  float: left;
+  margin:10px;
+  cursor: pointer;
+}
+.slide-menu-button .menu-icon span {
+  display: block;
+  margin-bottom: 4px;
+  width: 30px;
+  height: 4px;
+  background: #f5f5f5;
+}
+/*hamburger menu style*/
+#nav_toggle {
+  display: block;
+  margin: 10px;
+  top: 4px;
+  width: 46px;
+  height: 30px;
+  position: relative;
+  z-index: 900;
+}
+#nav_toggle div {
+  position: relative;
+}
+#nav_toggle span {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #DF0615;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+/*hamburger menu close style*/
+#nav_toggle span:nth-child(1) {
+  top: 0px;
+}
+#nav_toggle span:nth-child(2) {
+  top: 6px;
+}
+#nav_toggle span:nth-child(3) {
+  top: 12px;
+}
+/*hamburger menu open style*/
+.open #nav_toggle span:nth-child(1) {
+  top: 6px;
+  background: #f5f5f5;
+  -webkit-transform: rotate(145deg);
+  -moz-transform: rotate(145deg);
+  transform: rotate(145deg);
+}
+.open #nav_toggle span:nth-child(2) {
+  width: 0;
+  left: 50%;
+}
+.open #nav_toggle span:nth-child(3) {
+  top: 6px;
+  background: #f5f5f5;
+  -webkit-transform: rotate(-145deg);
+  -moz-transform: rotate(-145deg);
+  transform: rotate(-145deg);
+}
+.menu-pc {
+	display: block;
+}
+.menu-sp {
+	display: none;
+}
+@media only screen and (max-width : 769px) {
+  .menu-pc {
+		display: none;
+	}
+.menu-sp {
+		display: block;
+	}
+}
+
+
+
